@@ -6,6 +6,8 @@ function sleep (time) {
 var changing_value = document.getElementsByClassName("board-pager-menu-item current-page");
 //get the download button
 var download_button = document.getElementsByClassName("pointer btn-event download-image");
+//downlading the current slide for once
+download_button[0].click();
 //adding event listeners
 if(window.addEventListener) {
    changing_value[0].addEventListener('DOMSubtreeModified', contentChanged, false);
