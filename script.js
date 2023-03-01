@@ -2,7 +2,7 @@
 function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
   }
-//we get the div element which will change when teacher goes through another page of the pdf
+//we get the div element and its value which will change when teacher goes through another page of the pdf
 var changing_value = document.getElementsByClassName("board-pager-menu-item current-page");
 //get the download button
 var download_button = document.getElementsByClassName("pointer btn-event download-image");
@@ -15,7 +15,7 @@ if(window.addEventListener) {
    }
    function contentChanged() {
     //sleep and click on the download button
-    sleep(3000).then(() => {
+    sleep(4000).then(() => {
     download_button[0].click();
     });
  
