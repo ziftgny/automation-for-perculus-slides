@@ -17,7 +17,7 @@ if(window.addEventListener) {
    }
    function contentChanged() {
     //sleep and click on the download button
-    sleep(250).then(() => {
+    sleep(500).then(() => {
     download_button[0].click();
     });
  
